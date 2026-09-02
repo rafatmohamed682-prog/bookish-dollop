@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرئيسية - Ashour</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f4f6f9; color: #333; direction: rtl; }
+        
+        .top-bar { background-color: #2c3e50; color: #fff; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .logo { font-size: 24px; font-weight: bold; color: #f39c12; text-decoration: none; }
+        .nav-links { list-style: none; display: flex; gap: 20px; }
+        .nav-links li a { color: #fff; text-decoration: none; font-size: 16px; transition: color 0.3s; }
+        .nav-links li a:hover { color: #f39c12; }
+
+        /* واجهة الهيرو */
+        .hero { height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px; background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover; color: #fff; }
+        .hero h1 { font-size: 46px; margin-bottom: 15px; }
+        .hero p { font-size: 20px; margin-bottom: 30px; max-width: 650px; line-height: 1.6; }
+        .main-btn { background-color: #f39c12; color: #fff; padding: 15px 40px; font-size: 18px; font-weight: bold; border-radius: 6px; text-decoration: none; transition: background 0.3s, transform 0.2s; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        .main-btn:hover { background-color: #d68910; transform: translateY(-2px); }
+
+        /* نبذة سريعة */
+        .about-preview { max-width: 1000px; margin: 50px auto; padding: 20px; text-align: center; }
+        .about-preview h2 { font-size: 32px; color: #2c3e50; margin-bottom: 15px; }
+        .about-preview p { font-size: 17px; color: #666; line-height: 1.8; }
+
+        footer { background-color: #2c3e50; color: #fff; text-align: center; padding: 20px; margin-top: 40px; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <header class="top-bar">
+        <a href="home.html" class="logo">Ashour</a>
+        <ul class="nav-links">
+            <li><a href="home.html" style="color: #f39c12;">الرئيسية</a></li>
+            <li><a href="products.html">المنتجات</a></li>
+            <li><a href="services.html">خدماتنا</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+        </ul>
+    </header>
+
+    <main class="hero">
+        <h1>ورشة عاشور للألومنتال</h1>
+        <p>نقدم خبرة سنين في تفصيل وتركيب أجود أعمال الألومنتال بأحدث التصميمات العصرية التي تناسب منزلك.</p>
+        <a href="products.html" class="main-btn">تصفح منتجاتنا الآن</a>
+    </main>
+
+    <section class="about-preview">
+        <h2>نبتكر الجودة لراحة بيتك</h2>
+        <p>نحن في ورشة عاشور نؤمن بأن التفاصيل تصنع الفارق. نستخدم أقوى وأفضل قطاعات الألومنيوم لضمان المتانة والأناقة، مع التزام تام بالمواعيد وتقديم أفضل خدمة صيانة ومعاينة منزلية.</p>
+    </section>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2026 - ورشة عاشور للألومنتال</p>
+    </footer>
+
+</body>
+</html>

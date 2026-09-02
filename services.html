@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدماتنا - Ashour</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f4f6f9; color: #333; direction: rtl; }
+        
+        .top-bar { background-color: #2c3e50; color: #fff; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .logo { font-size: 24px; font-weight: bold; color: #f39c12; text-decoration: none; }
+        .nav-links { list-style: none; display: flex; gap: 20px; }
+        .nav-links li a { color: #fff; text-decoration: none; font-size: 16px; transition: color 0.3s; }
+        .nav-links li a:hover { color: #f39c12; }
+
+        .services-container { max-width: 1100px; margin: 40px auto; padding: 0 20px; text-align: center; }
+        .services-container h1 { font-size: 36px; color: #2c3e50; margin-bottom: 10px; }
+        .services-container p.subtitle { color: #666; font-size: 18px; margin-bottom: 40px; }
+
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; text-align: right; }
+        .service-card { background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); border-right: 5px solid #f39c12; }
+        .service-card h3 { font-size: 20px; color: #2c3e50; margin-bottom: 12px; }
+        .service-card p { font-size: 15px; color: #666; line-height: 1.6; }
+
+        footer { background-color: #2c3e50; color: #fff; text-align: center; padding: 20px; margin-top: 60px; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <header class="top-bar">
+        <a href="home.html" class="logo">Ashour</a>
+        <ul class="nav-links">
+            <li><a href="home.html">الرئيسية</a></li>
+            <li><a href="products.html">المنتجات</a></li>
+            <li><a href="services.html" style="color: #f39c12;">خدماتنا</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+        </ul>
+    </header>
+
+    <div class="services-container">
+        <h1>خدماتنا الاحترافية</h1>
+        <p class="subtitle">نقدم خدمات متكاملة تضمن راحتك وتنفيذ طلباتك بدقة هندسية عالية</p>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>معاينة ورفع مقاسات</h3>
+                <p>نزور مكانك لمعاينة المساحات ورفع المقاسات بدقة متناهية مجاناً لضمان تناسب التصميم تماماً.</p>
+            </div>
+            <div class="service-card">
+                <h3>تفصيل وتصنيع مخصص</h3>
+                <p>تفصيل المطابخ، الأبواب، والشبابيك حسب رغبتك ومساحة منزلك (Custom Made) بأجود القطاعات.</p>
+            </div>
+            <div class="service-card">
+                <h3>النقل والتركيب المحترف</h3>
+                <p>نقوم بنقل المنتجات إلى مكانك وتركيبها بواسطة فنيين مهرة دون أي إزعاج أو تلف للمكان.</p>
+            </div>
+            <div class="service-card">
+                <h3>الصيانة وما بعد البيع</h3>
+                <p>نوفر خدمات الصيانة الدورية، فك وتركيب المطابخ في حال الانتقال، وحل أي مشكلة طارئة.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2026 - ورشة عاشور للألومنتال</p>
+    </footer>
+
+</body>
+</html>

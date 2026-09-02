@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا - Ashour</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f4f6f9; color: #333; direction: rtl; }
+        
+        .top-bar { background-color: #2c3e50; color: #fff; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .logo { font-size: 24px; font-weight: bold; color: #f39c12; text-decoration: none; }
+        .nav-links { list-style: none; display: flex; gap: 20px; }
+        .nav-links li a { color: #fff; text-decoration: none; font-size: 16px; transition: color 0.3s; }
+        .nav-links li a:hover { color: #f39c12; }
+
+        .contact-container { max-width: 900px; margin: 40px auto; padding: 0 20px; text-align: center; }
+        .contact-container h1 { font-size: 36px; color: #2c3e50; margin-bottom: 10px; }
+        .contact-container p.subtitle { color: #666; font-size: 18px; margin-bottom: 40px; }
+
+        .contact-box { background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); text-align: right; }
+        .contact-item { margin-bottom: 20px; font-size: 18px; color: #333; display: flex; align-items: center; gap: 10px; }
+        .contact-item span { font-weight: bold; color: #2c3e50; }
+        .contact-item a { color: #f39c12; text-decoration: none; }
+        .contact-item a:hover { text-decoration: underline; }
+
+        /* نموذج إرسال رسالة */
+        .form-group { margin-bottom: 20px; text-align: right; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: bold; color: #2c3e50; }
+        .form-group input, .form-group textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 16px; }
+        .submit-btn { background-color: #f39c12; color: white; border: none; padding: 12px 30px; font-size: 18px; font-weight: bold; border-radius: 6px; cursor: pointer; transition: background 0.3s; }
+        .submit-btn:hover { background-color: #d68910; }
+
+        footer { background-color: #2c3e50; color: #fff; text-align: center; padding: 20px; margin-top: 60px; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <header class="top-bar">
+        <a href="home.html" class="logo">Ashour</a>
+        <ul class="nav-links">
+            <li><a href="home.html">الرئيسية</a></li>
+            <li><a href="products.html">المنتجات</a></li>
+            <li><a href="services.html">خدماتنا</a></li>
+            <li><a href="contact.html" style="color: #f39c12;">تواصل معنا</a></li>
+        </ul>
+    </header>
+
+    <div class="container contact-container">
+        <h1>تواصل مع ورشة عاشور</h1>
+        <p class="subtitle">نحن جاهزون للرد على استفساراتكم وتلقي طلباتكم طوال أيام الأسبوع</p>
+
+        <div class="contact-box">
+            <div class="contact-item">
+                <span>📞 رقم الهاتف (اضغط للاتصال):</span> 
+                <a href="tel:01220860389">01220860389</a>
+            </div>
+            <div class="contact-item">
+                <span>💬 واتساب مباشر:</span> 
+                <a href="https://wa.me/201220860389" target="_blank">اضغط هنا للمراسلة الفورية</a>
+            </div>
+            <div class="contact-item">
+                <span>📍 العنوان:</span> 
+                <p style="display:inline; color: #666; font-size:16px;">يُرجى كتابة عنوان الورشة هنا (المحافظةالاسكندرية  - المنطقةغبريال - الشارع مصطفي كامل)</p>
+            </div>
+            <div class="contact-item">
+                <span>⏰ مواعيد العمل:</span> 
+                <p style="display:inline; color: #666; font-size:16px;">من السبت إلى الخميس (من 9 صباحاً حتى 10 مساءً)</p>
+            </div>
+
+            <hr style="margin: 30px 0; border: 0; border-top: 1px solid #eee;">
+
+            <h3 style="color: #2c3e50; margin-bottom: 20px; font-size: 22px;">أو اترك لنا رسالة وسنتواصل معك قريباً:</h3>
+            
+            <form onsubmit="event.preventDefault(); alert('تم إرسال رسالتك بنجاح وسنتواصل معك قريباً!');">
+                <div class="form-group">
+                    <label>الاسم:</label>
+                    <input type="text" placeholder="اكتب اسمك الكريم هنا" required>
+                </div>
+                <div class="form-group">
+                    <label>رقم الهاتف:</label>
+                    <input type="tel" placeholder="رقم الموبايل للتواصل معك" required>
+                </div>
+                <div class="form-group">
+                    <label>الرسالة / الطلب:</label>
+                    <textarea rows="4" placeholder="اكتب تفاصيل طلبك أو استفسارك (مثلاً: أريد معاينة مطبخ)..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">إرسال الطلب</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2026 - ورشة عاشور للألومنتال</p>
+    </footer>
+
+</body>
+</html
